@@ -1,4 +1,4 @@
-const colors = ["var(--rosa)", "var(--marigold-deep)", "var(--turquesa)", "var(--violet)", "var(--marigold)"];
+const colors: string[] = ["var(--rosa)", "var(--marigold-deep)", "var(--turquesa)", "var(--violet)", "var(--marigold)"];
 
 function Flag({ color, i }: { color: string; i: number }) {
   return (
