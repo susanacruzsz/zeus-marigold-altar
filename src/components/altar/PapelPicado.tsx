@@ -41,7 +41,7 @@ export function PapelPicado({ count = 14 }: { count?: number }) {
       <div className="absolute left-0 right-0 top-2 h-0.5 bg-foreground/60" />
       <div className="flex justify-center gap-1 overflow-hidden pt-2 md:gap-2">
         {Array.from({ length: count }).map((_, i) => (
-          <Flag key={i} i={i} color={colors[i % colors.length]} />
+          <Flag key={i} i={i} color={colors[i % colors.length] ?? "var(--rosa)"} />
         ))}
       </div>
     </header>
